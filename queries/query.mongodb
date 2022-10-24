@@ -1,0 +1,18 @@
+use('projeto')
+
+db.User.drop()
+db.createCollection('User')
+db.User.insertMany([
+    {
+        username:'gabriel',
+        password:'123',
+        role:'admin'
+    },
+    {
+        username:'vivan',
+        password:'123',
+        role:'user'
+    },
+])
+
+/* db.users.createIndex({username: 1},{unique:true}) */

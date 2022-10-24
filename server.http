@@ -1,0 +1,36 @@
+GET http://localhost:3001/admin/getallusers
+x-access-token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7Il9pZCI6IjYzNTAyZmE3M2NmNTYwMjU4ZDY3M2VjYSIsInVzZXJuYW1lIjoiYWRtaW4iLCJwYXNzd29yZCI6IiQyYSQxMCRkL1VubEw1SzBaR2xUd1ZSWHdtNkNlZE10U2dmVWMyNmNHeVBlbmJTSk81UE15RGVjZnpaRyIsInJvbGUiOiJhZG1pbiJ9LCJpYXQiOjE2NjYxOTk0ODB9.a4PLEYf2O33gUdN9-A9RUyagAHYl6Cq9CeEF1IO_ZaU
+
+
+###
+GET http://localhost:3001/user
+x-access-token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7Il9pZCI6IjYzNTAyZmE3M2NmNTYwMjU4ZDY3M2VjYSIsInVzZXJuYW1lIjoiYWRtaW4iLCJwYXNzd29yZCI6IiQyYSQxMCRkL1VubEw1SzBaR2xUd1ZSWHdtNkNlZE10U2dmVWMyNmNHeVBlbmJTSk81UE15RGVjZnpaRyIsInJvbGUiOiJhZG1pbiJ9LCJpYXQiOjE2NjYxOTk0ODB9.a4PLEYf2O33gUdN9-A9RUyagAHYl6Cq9CeEF1IO_ZaU
+
+###
+POST http://localhost:3001/signup
+Content-Type: application/json
+
+{
+    "username": "admin",
+    "password": "admin",
+    "role": "admin"
+}
+
+###
+POST http://localhost:3001/signup
+Content-Type: application/json
+
+{
+    "username": "user",
+    "password": "user",
+    "role": "user"
+}
+
+###
+POST http://localhost:3001/signin
+Content-Type: application/json
+
+{
+    "username": "admin",
+    "password": "admin"
+}
